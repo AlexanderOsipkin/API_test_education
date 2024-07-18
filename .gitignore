@@ -163,6 +163,3 @@ cython_debug/
 #allure
 allure-results
 allure
-
-#credentinals
-.env
