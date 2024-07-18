@@ -14,7 +14,7 @@ def test_json_schema_in_response():
 
 
 def test_job_name_from_request_returns_in_response():
-    job = "master"
+    job = "leader"
     name = "morpheus"
 
     response = requests.post('https://reqres.in/api/users', data={'name': name, 'job': job})
