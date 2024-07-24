@@ -19,5 +19,5 @@ def test_create_user():
     body = response.json()
 
     assert response.status_code == 200
-    with open('education_schema.json') as file:
+    with open('tests/education_schema.json') as file:
         validate(body, schema=json.loads(file.read()))
