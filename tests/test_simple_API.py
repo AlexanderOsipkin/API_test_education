@@ -9,7 +9,7 @@ def test_json_schema_in_response():
     body = response.json()
 
     assert response.status_code == 201
-    with open('post_users.json') as file:
+    with open('tests/post_users.json') as file:
         validate(body, schema=json.loads(file.read()))
 
 
