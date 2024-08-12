@@ -7,7 +7,7 @@ from jsonschema import validate
 def test_create_user():
     request_body_data = {
         "id": 157893627,
-        "username": "testuser1579",
+        "username": "testuser157900",
         "firstName": "Ivan",
         "lastName": "Ivanov",
         "email": "test@testmail.com",
