@@ -6,9 +6,9 @@ from jsonschema import validate
 
 def test_create_user():
     request_body_data = {
-        "id": 157893627,
-        "username": "testuser157900",
-        "firstName": "Ivan",
+        "id": 157893637,
+        "username": "testuser15790033",
+        "firstName": "I11van",
         "lastName": "Ivanov",
         "email": "test@testmail.com",
         "password": "test1579",
@@ -19,5 +19,5 @@ def test_create_user():
     body = response.json()
 
     assert response.status_code == 200
-    with open('tests/education_schema.json') as file:
+    with open('education_schema.json') as file:
         validate(body, schema=json.loads(file.read()))
